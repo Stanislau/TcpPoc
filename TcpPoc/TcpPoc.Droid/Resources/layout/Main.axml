@@ -4,4 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+    <TextView 
+        android:id="@+id/connectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[Not changed]"
+        />
+    
+    <TextView 
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[Not received]"
+        />
+        
+    <Button 
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="connect"
+        />
+
 </LinearLayout>
