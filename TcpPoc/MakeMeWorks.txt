@@ -1,0 +1,1 @@
+Copy 1.wav file from Materials into TcpPoc.Droid\bin\Debug folder.
