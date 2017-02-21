@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpPoc.Server", "TcpPoc.Server\TcpPoc.Server.csproj", "{C6331F40-6E1A-430B-8428-E61385B09A9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpPoc.Droid", "TcpPoc.Droid\TcpPoc.Droid.csproj", "{3048DADC-20DB-4703-B527-8FA3B2E39A04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6331F40-6E1A-430B-8428-E61385B09A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6331F40-6E1A-430B-8428-E61385B09A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6331F40-6E1A-430B-8428-E61385B09A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6331F40-6E1A-430B-8428-E61385B09A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3048DADC-20DB-4703-B527-8FA3B2E39A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3048DADC-20DB-4703-B527-8FA3B2E39A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3048DADC-20DB-4703-B527-8FA3B2E39A04}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3048DADC-20DB-4703-B527-8FA3B2E39A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3048DADC-20DB-4703-B527-8FA3B2E39A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3048DADC-20DB-4703-B527-8FA3B2E39A04}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
