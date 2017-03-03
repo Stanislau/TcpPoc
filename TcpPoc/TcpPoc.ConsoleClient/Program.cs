@@ -21,15 +21,6 @@ namespace TcpPoc.ConsoleClient
                 client.Run();
                 Console.ReadKey();
             }
-
-            //var assembly = Assembly.GetExecutingAssembly();
-            //var resourceName = "TcpPoc.ConsoleClient.1.wav";
-            //using (var stream = assembly.GetManifestResourceStream(resourceName))
-            //{
-            //    var buffer = new byte[1024];
-            //    var actual = stream.Read(buffer, 0, 1024);
-            //    Console.WriteLine(actual);
-            //} ;
         }
     }
 
