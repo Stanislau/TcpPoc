@@ -1,4 +1,6 @@
 ﻿using System;
+using AudioToolbox;
+using AVFoundation;
 using Cirrious.FluentLayouts.Touch;
 using Sockets.Plugin;
 using UIKit;
@@ -10,6 +12,8 @@ namespace TcpPoc.Apple
         private TcpSocketClient _client;
         private UILabel _status;
         private UILabel _message;
+
+        private WavStreamPlayer _audio;
 
         private const int BufferSize = 20 * 20 * 2 * 2;
 
@@ -53,6 +57,7 @@ namespace TcpPoc.Apple
                 );
 
             _client = new TcpSocketClient();
+            _audio = new WavStreamPlayer();
 
             connect.TouchUpInside += ConnectOnTouchUpInside;
         }
@@ -76,15 +81,18 @@ namespace TcpPoc.Apple
                 var buffer = new byte[BufferSize];
                 var offset = 0;
                 var actuallyRead = 0;
-
+                
                 do
                 {
                     actuallyRead = await _client.Socket.GetStream().ReadAsync(buffer, 0, BufferSize);
                     offset += actuallyRead;
                     _message.Text = offset.ToString();
-                    //_track.Write(buffer, 0, actuallyRead);
+
+                    _audio.Parse(buffer);
 
                 } while (actuallyRead != 0);
+
+                _audio.Dispose();
 
                 //_track.Stop();
                 _message.Text = "Completed";
